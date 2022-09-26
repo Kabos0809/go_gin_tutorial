@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/kabos0809/go_gin_tutorial"
+	"github.com/kabos0809/go_gin_tutorial/model"
 )
 
 type BookService struct {}

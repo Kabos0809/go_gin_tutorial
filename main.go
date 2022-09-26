@@ -11,9 +11,9 @@ func main() {
 	e := gin.Default()
 	e.Use(middleware.RecordUaAndTime)
 	//CRUD
-	be := engine.Group("/book")
+	be := e.Group("/book")
 	{
-		v1 := bookEngine.Group("/v1")
+		v1 := be.Group("/v1")
 		{
 			v1.POST("/add", controller.BookAdd)
 			v1.GET("/list", controller.BookList)
